@@ -99,6 +99,10 @@ h3{
 	border: 1px solid #ccc;
 	margin-top: 40px;
 }
+.photo li img{
+	width: 300px;
+	height: 200px;
+}
 .page_three div p{
 	line-height: 3em;
 }
