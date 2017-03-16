@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>响应式</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing:border-box;
+		}
+		.clear{
+			clear: both;
+		}
+		body{
+			
+			border:1px solid #000;
+			height: 100%;
+			padding-bottom: 20px;
+			padding-right:20px;
+		}
+		.span0{
+			float: left;
+			height:50px;
+			width:50px;
+			background: #eee;
+			border:1px solid #999;
+			margin-left:20px;
+			margin-top:20px;
+		}
+		@media(min-width: 768px){
+
+
+		.span1{
+			width: 30%;
+		}
+		.span2{
+			width: 30%;
+		}
+		.span3{
+			width: 22.5%;
+		}
+		.span4{
+			width: 45%;
+		}
+		.span6{
+			width: 7.5%;
+		}
+		.span7{
+			width: 15%;
+		}
+		.span9{
+			width: 43%;
+		}}
+		@media(max-width:767px ){
+			.span1{
+			width: 46.5%;
+			}
+			.span2{
+				width: 96%;
+			}
+			.span3{
+			width: 22.5%;
+			}
+			.span4{
+				width: 45%;
+			}
+			.span6{
+				width: 15%;
+			}
+			
+			.span7{
+				width: 22.5%;
+			}
+			.span8{
+				width:60%;
+			}
+			.span9{
+				width:22.5%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="span1 span0"></div>
+	<div class="span1 span0"></div>
+	<div class="span2 span0"></div>
+	<div class="span3 span0"></div>
+	<div class="span4 span0"></div>
+	<div class="span3 span0"></div>
+	<div class="span6 span0"></div>
+	<div class="span6 span0"></div>
+	<div class="span7 span0 span8"></div>
+	<div class="span7 span0"></div>
+	<div class="span9 span0"></div>
+	<div class="clear"></div>
+</body>
+</html>
