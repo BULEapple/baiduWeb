@@ -3,96 +3,91 @@
 <head>
 	<meta charset="UTF-8">
 	<title>响应式</title>
-	<style type="text/css">
+	<style>
 		*{
+			padding:0;
 			margin:0;
-			padding: 0;
 			box-sizing:border-box;
 		}
-		.clear{
-			clear: both;
-		}
 		body{
-			
-			border:1px solid #000;
-			height: 100%;
-			padding-bottom: 20px;
-			padding-right:20px;
+			padding:10px;
+			width:100%;
+			/*border:1px solid #999;*/
 		}
-		.span0{
-			float: left;
-			height:50px;
-			width:50px;
-			background: #eee;
+		div{
+			float:left;
+			
+		}
+		.box{
+			
 			border:1px solid #999;
-			margin-left:20px;
-			margin-top:20px;
+			background: #eee;
+			height: 50px;
+			width: 100%;
 		}
 		@media(min-width: 768px){
 
-
-		.span1{
-			width: 30%;
-		}
-		.span2{
-			width: 30%;
-		}
-		.span3{
-			width: 22.5%;
-		}
-		.span4{
-			width: 45%;
-		}
-		.span6{
-			width: 7.5%;
-		}
-		.span7{
-			width: 15%;
-		}
-		.span9{
-			width: 43%;
-		}}
-		@media(max-width:767px ){
-			.span1{
-			width: 46.5%;
+			.row-md-4{
+				width: 33.3%;
+				padding:10px;
 			}
-			.span2{
-				width: 96%;
+			.row-md-3{
+				width:25%;
+				padding:10px;
 			}
-			.span3{
-			width: 22.5%;
+			.row-md-6{
+				width: 50%;
+				padding:10px;
 			}
-			.span4{
-				width: 45%;
+			.row-md-1{
+				width: 8.33%;
+				padding: 10px;
 			}
-			.span6{
-				width: 15%;
-			}
-			
-			.span7{
-				width: 22.5%;
-			}
-			.span8{
-				width:60%;
-			}
-			.span9{
-				width:22.5%;
+			.row-md-2{
+				width: 16.66%;
+				padding:10px;
 			}
 		}
+		@media(max-width: 767px){
+			.row-sm-6{
+				width: 50%;
+				padding: 10px;
+			}
+			.row-sm-12{
+				width: 100%;
+				padding:10px;
+			}
+			.row-sm-3{
+				width: 25%;
+				padding:10px;
+			}
+			.row-sm-6{
+				width: 50%;
+				padding:10px;
+			}
+			.row-sm-2{
+				width: 16.66%;
+				padding:10px;
+			}
+			.row-sm-8{
+				width: 66.66%;
+				padding:10px;
+			}
+		}
+		
 	</style>
 </head>
 <body>
-	<div class="span1 span0"></div>
-	<div class="span1 span0"></div>
-	<div class="span2 span0"></div>
-	<div class="span3 span0"></div>
-	<div class="span4 span0"></div>
-	<div class="span3 span0"></div>
-	<div class="span6 span0"></div>
-	<div class="span6 span0"></div>
-	<div class="span7 span0 span8"></div>
-	<div class="span7 span0"></div>
-	<div class="span9 span0"></div>
-	<div class="clear"></div>
+	<div class="row-md-4 row-sm-6"><div class="box"></div></div>
+	<div class="row-md-4 row-sm-6"><div class="box"></div></div>
+	<div class="row-md-4 row-sm-12"><div class="box"></div></div>
+	<div class="row-md-3 row-sm-3"><div class="box"></div></div>
+	<div class="row-md-6 row-sm-6"><div class="box"></div></div>
+	<div class="row-md-3 row-sm-3"><div class="box"></div></div>
+	<div class="row-md-1 row-sm-2"><div class="box"></div></div>
+	<div class="row-md-1 row-sm-2"><div class="box"></div></div>
+	<div class="row-md-2 row-sm-8"><div class="box"></div></div>
+	<div class="row-md-2 row-sm-3"><div class="box"></div></div>
+	<div class="row-md-6 row-sm-3"><div class="box"></div></div>
 </body>
 </html>
